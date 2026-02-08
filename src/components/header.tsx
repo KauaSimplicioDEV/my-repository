@@ -1,9 +1,7 @@
 "use client";
 
 import TextType from "./TextType";
-import SessionDivider from "@/session-divider.svg";
 import Image from "next/image";
-import SessionDivider2 from "@/session-divider2.svg";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Header = () => {
@@ -36,9 +34,11 @@ const Header = () => {
 
       <div className="absolute flex justify-end top-14 right-0">
         <Image
-          src={SessionDivider}
+          src="/session-divider.svg"
           alt="Caracter tecnologia"
           className="w-50 md:w-24 lg:w-60"
+          width={240}
+          height={240}
         />
       </div>
 
@@ -61,7 +61,7 @@ const Header = () => {
 
         <div className="shrink-0">
           <Image
-            src="/images/kaua-professional-image.JPG"
+            src="/kaua-professional-image.JPG"
             alt="Professional image of Kauã Simplício"
             className="rounded-full w-56 h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover border-4 border-[#319ff9] p-1"
             width={500}
@@ -71,9 +71,11 @@ const Header = () => {
       </div>
       <div className="sm:hidden lg:block absolute flex justify-end mt-5 bottom-20 left-0">
         <Image
-          src={SessionDivider2}
+          src="/session-divider2.svg"
           alt="Caracter tecnologia"
           className="w-50 md:w-24 lg:w-60"
+          width={240}
+          height={240}
         />
       </div>
     </section>
