@@ -70,14 +70,16 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="absolute flex justify-end bottom-22 lg:bottom-35 left-0">
-        <Image
-          src="/session-divider2.svg"
-          alt="Caracter tecnologia"
-          className="w-50 md:w-24 lg:w-60"
-          width={240}
-          height={240}
-        />
+      <div className="relative mt-14">
+        <div className="absolute flex justify-end bottom-0 lg:bottom-0 left-0">
+          <Image
+            src="/session-divider2.svg"
+            alt="Caracter tecnologia"
+            className="w-50 md:w-24 lg:w-60"
+            width={240}
+            height={240}
+          />
+        </div>
       </div>
     </section>
   );
