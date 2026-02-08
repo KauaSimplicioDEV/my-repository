@@ -8,7 +8,7 @@ const Header = () => {
   const { language, setLanguage, t } = useLanguage();
 
   return (
-    <section className="center-nav mx-auto min-h-screen flex items-center">
+    <section className="pt-30">
       <div className="mx-4 md:mx-8 lg:mx-36 absolute flex gap-2 top-12 lg:top-14 left-0">
         <button
           onClick={() => setLanguage("pt-br")}
@@ -42,7 +42,7 @@ const Header = () => {
         />
       </div>
 
-      <div className="w-full text-white flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-16">
+      <div className="w-full center-nav mx-auto text-white flex flex-col lg:flex-row items-center lg:items-center justify-between gap-8 lg:gap-16">
         <div className="space-y-3 md:space-y-5 flex-1">
           <p className="text-sm md:text-base lg:text-lg">
             {t("header.greeting")}
@@ -69,7 +69,8 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="sm:hidden lg:block absolute flex justify-end mt-5 bottom-20 left-0">
+
+      <div className="absolute flex justify-end bottom-22 lg:bottom-35 left-0">
         <Image
           src="/session-divider2.svg"
           alt="Caracter tecnologia"

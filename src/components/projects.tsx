@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import {
@@ -14,9 +14,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import bewearProjectCover from "../../public/bewear-project-cover.jpg";
-import weatherProjectCover from "../../public/weather-app-cover.jpg";
-import detroidProjectCover from "../../public/detroid-project-cover.jpg";
 import { Button } from "./ui/button";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -31,7 +28,7 @@ interface Project {
   titleKey: string;
   descriptionKey: string;
   technologies: ProjectTech[];
-  image: StaticImageData;
+  image: string;
   imageAlt: string;
   codeUrl?: string;
   liveUrl?: string;
@@ -49,7 +46,7 @@ const projects: Project[] = [
       { icon: SiTypescript, color: "text-[#3178C6]", name: "TypeScript" },
       { icon: SiDrizzle, color: "text-white", name: "Drizzle ORM" },
     ],
-    image: bewearProjectCover,
+    image: "/bewear-project-cover.jpg",
     imageAlt: "Bewear Project",
     liveUrl: "",
     codeUrl: "https://github.com/KauaSimplicioDEV/bewear-bootcamp-project",
@@ -64,7 +61,7 @@ const projects: Project[] = [
       { icon: SiTailwindcss, color: "text-[#06B6D4]", name: "Tailwind CSS" },
       { icon: SiTypescript, color: "text-[#3178C6]", name: "TypeScript" },
     ],
-    image: weatherProjectCover,
+    image: "/weather-app-cover.jpg",
     imageAlt: "Weather Cover Image",
     liveUrl: "https://weather-project-one-tau.vercel.app/",
     codeUrl: "https://github.com/KauaSimplicioDEV/weather-project",
@@ -82,7 +79,7 @@ const projects: Project[] = [
       { icon: SiSpringboot, color: "text-[#6DB33F]", name: "Spring Boot" },
       { icon: SiDocker, color: "text-[#2496ED]", name: "Docker" },
     ],
-    image: detroidProjectCover,
+    image: "/detroid-project-cover.jpg",
     imageAlt: "Grocery App Cover Image",
     codeUrl: "https://github.com/KauaSimplicioDEV/detroid-project",
   },

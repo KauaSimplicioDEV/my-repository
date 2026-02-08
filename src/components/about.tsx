@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section className="center-nav mx-auto">
-      <div className="text-white md:mt-16 lg:mt-20 font-semibold space-y-4 md:space-y-6">
+      <div className="text-white mt-30 md:mt-16 lg:mt-30 font-semibold space-y-4 md:space-y-6">
         <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
           {t("about.title")}{" "}
           <span className="blue-color border-r-3 pr-2">
