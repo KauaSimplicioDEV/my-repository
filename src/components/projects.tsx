@@ -48,7 +48,7 @@ const projects: Project[] = [
     ],
     image: "/bewear-project-cover.jpg",
     imageAlt: "Bewear Project",
-    liveUrl: "",
+    liveUrl: "https://bewear-project-kaua.vercel.app/",
     codeUrl: "https://github.com/KauaSimplicioDEV/bewear-bootcamp-project",
   },
   {
